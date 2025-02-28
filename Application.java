@@ -21,7 +21,7 @@ public class Application {
 			System.out.println("Spicy level: " + food.getQty());
 			System.out.println("Ingredients: ");
 			food.printIngredient();
-			System.out.println("--------------------------------");
+			System.out.println("-----------------------------------");
 		}
 	}
 	
@@ -33,12 +33,12 @@ public class Application {
 	
 	public void displayOrders() {
 		System.out.println("Order List: ");
-		System.out.println("-------------------");
+		System.out.println("-----------------------------------");
 		for(Order order : orders) {
 			System.out.println("User: " + order.getUser().getName() + " - " + order.getUser().getId());
 			System.out.println("Food: " + order.getFood().getName());
 			System.out.println("Date: " + order.getDesc());
-			System.out.println("-----------------------------");
+			System.out.println("-----------------------------------");
 		}
 	}
 }
